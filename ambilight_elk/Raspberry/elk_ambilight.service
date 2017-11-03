@@ -1,0 +1,15 @@
+[Unit]
+Description="System Ambilight w Elku"
+
+[Service]
+Type=simple
+
+User=root
+Group=root
+Restart=on-failure
+
+WorkingDirectory=/home/pi/Programs
+ExecStart=/home/pi/Programs/ambilight_run.sh
+
+[Install]
+WantedBy=multi-user.target
